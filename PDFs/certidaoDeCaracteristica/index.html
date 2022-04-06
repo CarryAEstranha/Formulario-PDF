@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>PDF | Certidão de Característica</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header id="header">
+        <img 
+            alt="Logo da prefeitura" 
+            id="logo" 
+            src="../../assets/images/logo.svg"
+        >
+
+        <div id="header-text">
+            <h1>
+                Estado do Rio Grande do Norte <br> 
+                Prefeitura de Extremoz <br> 
+                Secretaria do Meio Ambiente e Urbanismo
+            </h1>
+
+            <p>Rua Capitão José da Penha, s/n, Centro - Telefone: 84 3279-2610</p>
+        </div>
+    </header>
+    <div id="header-print-fixer"></div>
+
+    <main id="main">
+        <h2 id="form-title">
+            Certidão de Característica N°
+            <span id="numero"></span>
+        </h2>
+
+        <div id="form-header-content">
+            <p>
+                Proprietário:
+                <span id="proprietario"></span>
+            </p>
+            <p>
+                CPF/CNPJ:
+                <span id="cpfCnpj"></span>
+            </p>
+        </div>
+
+        <table id="form-table">
+            <tr>
+                <td class="row-title">Processo</td>
+                <td class="row-value" id="processo">value</td>
+            </tr>
+            <tr>
+                <td class="row-title">Tipo de Edificação</td>
+                <td class="row-value" id="tipoDeEdificacao">value</td>
+            </tr>
+            <tr>
+                <td class="row-title">Endereço da Obra</td>
+                <td class="row-value" id="enderecoDaObra">value</td>
+            </tr>
+            <tr>
+                <td class="row-title">Área Construída Todal</td>
+                <td class="row-value" id="areaConstruidaTotal">value</td>
+            </tr>
+            <tr>
+                <td class="row-title">Área do Terreno</td>
+                <td class="row-value" id="areaDoTerreno">value</td>
+            </tr>
+
+            <tr>
+                <th class="block-header" colspan="2">Características</th>
+            </tr>
+
+            <tr>
+                <td class="row-title">Cobertura</td>
+                <td class="row-value" id="cobertura">value</td>
+            </tr>
+            <tr>
+                <td class="row-title">Platibanda</td>
+                <td class="row-value" id="platibanda">value</td>
+            </tr>
+            <tr>
+                <td class="row-title">Laje</td>
+                <td class="row-value" id="laje">value</td>
+            </tr>
+            <tr>
+                <td class="row-title">Pintura</td>
+                <td class="row-value" id="pintura">value</td>
+            </tr>
+            <tr>
+                <td class="row-title">Esquadrias</td>
+                <td class="row-value" id="esquadrias">value</td>
+            </tr>
+            <tr>
+                <td class="row-title">Instalações</td>
+                <td class="row-value" id="instalacoes">value</td>
+            </tr>
+
+            <tr>
+                <th class="block-header" colspan="2">Compartimentos</th>
+            </tr>
+
+            <tr>
+                <td class="row-value" colspan="2" id="compartimentos">Value</td>
+            </tr>
+        </table>
+    </main>
+
+    <script src="./script.js" type="module"></script>
+</body>
+
+</html>

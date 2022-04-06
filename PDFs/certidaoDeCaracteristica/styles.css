@@ -1,0 +1,152 @@
+* {
+    word-break: break-all;
+
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgba(0, 0, 0, 0);
+}
+
+:root {
+    --header-height: 0px;
+}
+
+#header {
+    background: #FFFFFF;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+    padding: 2rem 0 2rem 0;
+
+    width: 100%;
+    max-width: 21cm;
+}
+
+#logo {
+    margin-right: 2rem;
+
+    width: 8rem;
+    height: auto;
+}
+
+#header-text {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+#header-text h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+
+    line-height: 1.5;
+
+    text-align: center;
+}
+
+#header-text p {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+
+    text-align: center;
+
+    margin-top: 0.5rem;
+}
+
+#main {
+    background: #FFFFFF;
+
+    line-height: 1.5;
+
+    margin: auto;
+
+    width: 100%;
+    max-width: 21cm;
+}
+
+#form-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    margin: 0 auto 2rem auto;
+}
+
+#form-header-content {
+    line-height: 1.5;
+}
+
+#form-header-content p {
+    color: #000000;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+#form-header-content span {
+    text-transform: uppercase;
+}
+
+#form-table {
+    border-collapse: collapse;
+
+    margin: 2rem 0 2rem 0;
+
+    width: 100%;
+}
+
+.block-header {
+    color: #000000;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    border: 0.0625rem solid #000000;
+
+    padding: 0.5rem;
+}
+
+.row-title, .row-value {
+    border: 0.0625rem solid #000000;
+
+    padding: 0.5rem;
+}
+
+.row-title {
+    color: #000000;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    width: 40%;
+}
+
+.row-value {
+    color: #000000;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+}

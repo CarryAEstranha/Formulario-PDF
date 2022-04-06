@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulário | Certificado de Característica</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div id="background">
+        <div id="background-image"></div>
+        <div id="background-front"></div>
+    </div>
+
+    <div id="page-content">
+        <header id="header">
+            <div id="header-content">
+                <img 
+                    alt="Logo da prefeitura" 
+                    id="logo" 
+                    src="../../assets/images/logo.svg"
+                >
+
+                <div id="header-text">
+                    <h1>
+                        Estado do Rio Grande do Norte <br>
+                        Prefeitura de Extremoz <br>
+                        Secretaria do Meio Ambiente e Urbanismo
+                    </h1>
+
+                    <p>Rua Capitão José da Penha, s/n, Centro - Telefone (84): 3279-2610</p>
+                </div>
+            </div>
+        </header>
+
+        <main id="main">
+            <h2 id="form-title">Certificado de Característica</h2>
+
+            <form action="../../PDFs/certidaoDeCaracteristica/index.html" id="form" target="_blank">
+                <section class="form-block">
+                    <div class="input-line">
+                        <label for="numero">Numero</label>
+                        <input id="numero" name="numero" placeholder="XXX/20XX" type="text">
+                    </div>
+
+                    <div class="input-line">
+                        <label for="processo">Processo</label>
+                        <input id="processo" name="processo" placeholder="XXXX/20" type="text">
+                    </div>
+
+                    <div class="input-line">
+                        <label for="proprietario">Proprietário</label>
+                        <input id="proprietario" name="proprietario" placeholder="Nome do Proprietário" type="text">
+                    </div>
+
+                    <div class="input-line">
+                        <label for="cpfCnpj">CPF / CNPJ</label>
+                        <input id="cpfCnpj" name="cpfCnpj" placeholder="CPF ou CNPJ" type="number">
+                    </div>
+
+                    <div class="input-line">
+                        <label for="tipoDeEdificacao">Tipo de Edificação</label>
+                        <select id="tipoDeEdificacao" name="tipoDeEdificacao">
+                            <option value="Multifamiliar">Multifamiliar</option>
+                            <option value="Unifamiliar">Unifamiliar</option>
+                        </select>
+                    </div>
+
+                    <div class="input-line">
+                        <label for="enderecoDaObra">Endereço da Obra</label>
+                        <input id="enderecoDaObra" name="enderecoDaObra" placeholder="" type="text">
+                    </div>
+
+                    <div class="input-line">
+                        <label for="areaConstruidaTotal">Área Construída Total</label>
+                        <input id="areaConstruidaTotal" name="areaConstruidaTotal" placeholder="x m²" step=".01" type="number">
+                    </div>
+
+                    <div class="input-line">
+                        <label for="areaDoTerreno">Área do Terreno</label>
+                        <input id="areaDoTerreno" name="areaDoTerreno" placeholder="x m²" step=".01" type="number">
+                    </div>
+                </section>
+
+                <section class="form-block">
+                    <h3 class="block-title">Características</h3>
+
+                    <div class="input-line">
+                        <label for="cobertura">Cobertura</label>
+                        <input id="cobertura" name="cobertura" placeholder="" type="text">
+                    </div>
+
+                    <div class="input-line">
+                        <label for="platibanda">Platibanda</label>
+                        <input id="platibanda" name="platibanda" placeholder="" type="text">
+                    </div>
+
+                    <div class="input-line">
+                        <label for="laje">Laje</label>
+                        <input id="laje" name="laje" placeholder="" type="text">
+                    </div>
+
+                    <div class="input-line">
+                        <label for="pintura">Pintura</label>
+                        <input id="pintura" name="pintura" placeholder="" type="text">
+                    </div>
+
+                    <div class="input-line">
+                        <label for="esquadrias">Esquadrias</label>
+                        <input id="esquadrias" name="esquadrias" placeholder="" type="text">
+                    </div>
+
+                    <div class="input-line">
+                        <label for="instalacoes">Instalações</label>
+                        <input id="instalacoes" name="instalacoes" placeholder="" type="text">
+                    </div>
+                </section>
+
+                <section class="form-block">
+                    <h3 class="block-title">Compartimentos</h3>
+
+                    <div class="input-line">
+                        <label class="hidden" for="compartimentos">Compartimentos</label>
+                        <textarea id="compartimentos" name="compartimentos" placeholder="Especificar os Compartimentos"></textarea>
+                    </div>
+                </section>
+
+                <button id="submit-form" type="submit">Gerar PDF</button>
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>
